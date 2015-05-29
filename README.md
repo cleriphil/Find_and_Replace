@@ -5,6 +5,6 @@ Find & Replace is an app that allows a user to edit a paragraph by replacing an 
 
 #### Setup Instructions:
   - Clone project in desktop
-  - Click on find_and_replace.html to launch browser
+  - Open find_and_replace.html to launch browser
 
 MIT License

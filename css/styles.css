@@ -28,7 +28,7 @@ textarea {
 .page-header h1 {
   color: #72587F;
   font-family: 'Fira Sans', sans-serif;
-  }
+}
 
 .page-header h1 {
   font-size: 49px;
@@ -36,11 +36,9 @@ textarea {
 
 .word_input {
   color: #CC0000;
-
 }
 
 .paragraph_input {
   font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
   padding: 15px;
-
 }

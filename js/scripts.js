@@ -1,4 +1,7 @@
 var findAndReplace = function(paragraph, wordToFind, wordToReplace) {
+
+
+
   paragraph = paragraph.replace(/[^\w\s?,.!'"]/g, "");
   if (paragraph.search(new RegExp(wordToFind, "i")) >= 0) {
     paragraph = paragraph.replace(new RegExp(wordToFind, "ig"), wordToReplace);

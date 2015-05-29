@@ -1,4 +1,7 @@
 describe("findAndReplace", function() {
+  it("returns an alert if the word to find is not in the given sentence", function() {
+    expect(findAndReplace("There is a tree", "water", "green tree")).to.equal(alert("The word was not found. Try again."));
+  });
   it("finds and replaces a given word in a sentence", function() {
     expect(findAndReplace("There is a tree", "tree", "shrub")).to.equal("There is a shrub");
   });
@@ -23,10 +26,5 @@ describe("findAndReplace", function() {
   it("replaces a word with a multiple word phrase", function() {
     expect(findAndReplace("There is a tree", "tree", "green tree")).to.equal("There is a green tree");
   });
-  it("returns an alert if the word to find is not in the given sentence", function() {
-    expect(findAndReplace("There is a tree", "water", "green tree")).to.equal(alert("The word was not found. Try again."));
-  });
-  // it("replaces a word, but not when it is part of another word", function() {
-  //   expect(findAndReplace("There is a tree", "tree", "green tree")).to.equal("There is a green tree");
-  // });
+
 });

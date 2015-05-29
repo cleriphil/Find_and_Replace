@@ -20,4 +20,7 @@ describe("findAndReplace", function() {
   it("replaces a word that has an apostrophe after it", function() {
     expect(findAndReplace("Sylvester's tree is green.", "sylvester", "Oliver")).to.equal("Oliver's tree is green.")
   });
+  it("replaces a word with a multiple word phrase", function() {
+    expect(findAndReplace("There is a tree", "tree", "green tree")).to.equal("There is a green tree");
+  });
 });

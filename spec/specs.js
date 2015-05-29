@@ -23,4 +23,7 @@ describe("findAndReplace", function() {
   it("replaces a word with a multiple word phrase", function() {
     expect(findAndReplace("There is a tree", "tree", "green tree")).to.equal("There is a green tree");
   });
+  it("returns an alert if the word to find is not in the given sentence", function() {
+    expect(findAndReplace("There is a tree", "water", "green tree")).to.equal(alert("The word was not found. Try again."));
+  });
 });

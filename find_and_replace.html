@@ -2,35 +2,36 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Fira+Sans|Maven+Pro' rel='stylesheet' type='text/css'>    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.11.3.js"></script>
     <script src="js/scripts.js"></script>
     <title>Find and Replace</title>
   </head>
   <body>
     <div class="container">
-      <h1>Find and Replace</h1>
-      <h4>Because you lost your word processor in a fire.</h4>
+      <div class="page-header center">
+        <h1>Find and Replace</h1>
+        <h5>First, we find it...and then we replace it.<h5>
+      </div>
       <form id="find_and_replace">
 
         <label for="paragraph">Copy and paste your content:</label>
         <br>
-        <textarea id="paragraph" rows="10" cols="80"></textarea>
+        <textarea id="paragraph" rows="10" cols="80" class="paragraph_input" placeholder="There's something over there." required></textarea>
         <br>
         <label for="word_to_find">Find</label>
-        <input id="word_to_find" name="word_to_find" type="text" placeholder="hate" required>
+        <input id="word_to_find" name="word_to_find" type="text" class="word_input" placeholder="something" required>
 
-        <label for="word_to_replace">Replace with</label>
-        <input id="word_to_replace" name="word_to_replace" type="text" placeholder="dislike" required>
-
+        <label for="word_to_replace">and replace with</label>
+        <input id="word_to_replace" name="word_to_replace" type="text" class="word_input" placeholder="nothing" required>
+        <br>
         <button class="btn btn-default">Submit</button>
       </form>
 
-      <div id="results">
-        <p>Your newly improved, epic poem:
-          <br>
-          <span class="result"></span>
-        </p>
+      <div class="result_section" id="results">
+        <h4>Your newly improved, epic poem:</h3>
+        <br>
+        <p><span class="result"></span></p>
       </div>
 
     </div>

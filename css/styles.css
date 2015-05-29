@@ -1,3 +1,46 @@
 #results {
   display: none;
 }
+
+body {
+  font-family: 'Maven Pro', sans-serif;
+}
+
+textarea {
+  width: 90%;
+}
+
+.result_section {
+  border: 1px dashed;
+  width: 90%;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.result_section p {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.result_seciton h4 {
+  color: #72587F;
+}
+
+.page-header h1 {
+  color: #72587F;
+  font-family: 'Fira Sans', sans-serif;
+  }
+
+.page-header h1 {
+  font-size: 49px;
+}
+
+.word_input {
+  color: #CC0000;
+
+}
+
+.paragraph_input {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  padding: 15px;
+
+}

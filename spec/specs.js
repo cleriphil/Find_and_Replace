@@ -1,7 +1,4 @@
 describe("findAndReplace", function() {
-  it("returns an alert if the word to find is not in the given sentence", function() {
-    expect(findAndReplace("There is a tree", "water", "green tree")).to.equal(alert("The word was not found. Try again."));
-  });
   it("finds and replaces a given word in a sentence", function() {
     expect(findAndReplace("There is a tree", "tree", "shrub")).to.equal("There is a shrub");
   });
